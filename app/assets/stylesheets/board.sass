@@ -1,0 +1,66 @@
+.board
+  $container-width: 97%
+  $margin-top: 2em
+
+  .nav-wrapper
+    margin: 0 auto
+    max-width: $container-width
+
+  .container
+    max-width: $container-width
+    margin-top: $margin-top
+
+  section.page-header
+
+  section.content
+    margin: $margin-top auto 0 auto
+
+span.header-phase
+  font-weight: 600
+
+table.kanban
+  $cell-width: 180px
+  $min-width: $cell-width
+  $border-color: darken($table-border-color, 40%)
+
+  thead
+    tr
+      &:last-child
+        border-bottom-width: 2px
+        border-bottom-style: solid
+
+      th
+        text-align: center
+        padding: 0.3em 0.1em
+        width: $cell-width
+        max-width: $cell-width
+        border-style: solid
+        border-color: $border-color
+        border-top-width: 0px
+        border-right-width: 0px
+        border-bottom-width: 0px
+        border-left-width: 0px
+
+        button.dropdown-toggle
+          border-style: none
+
+  tr
+    td
+      width: $cell-width
+      padding-top: 0.6em
+      padding-right: 0
+      padding-bottom: 0
+      padding-left: 0
+
+  .card
+    margin: 0.1em
+
+    .card-title
+      font-weight: 600
+      font-size: 1em
+
+    .card-header
+      padding: 0.3em 0.5em
+
+    .card-block
+      padding: 1em 0.5em 0.5em 0.5em

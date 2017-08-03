@@ -1,0 +1,17 @@
+= form_with model: model do |f|
+  .form-group.row
+    = f.label :name, class: 'col-sm-4 control-label'
+    .col-sm-8
+      = f.text_field :name, class: 'form-control'
+  .form-group.row
+    = f.label :goal, class: 'col-sm-4 control-label'
+    .col-sm-8
+      = f.text_area :goal, rows: 5, class: 'form-control'
+  .form-group.row
+    = f.label :kickstart, class: 'col-sm-4 control-label'
+    .col-sm-8
+      %label
+        = f.check_box :kickstart
+  .form-group.row
+    .col-sm-offset-4.col-sm-8
+      = f.submit 'Launch new project', class: 'btn btn-primary btn-lg'

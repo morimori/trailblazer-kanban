@@ -1,0 +1,15 @@
+=identifiable($width: 10%)
+  &:first-child
+    width: $width
+
+=actionable($width: 20%)
+  &:last-child
+    width: $width
+
+table.ids
+  th
+    +identifiable
+
+table.actions
+  th
+    +actionable

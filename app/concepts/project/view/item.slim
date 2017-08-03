@@ -1,0 +1,8 @@
+tr
+  td= model.name
+  td= model.goal
+  td
+    .pull-right
+      => link_to 'Edit', edit_project_path(model)
+      | |
+      =< link_to 'Delete', project_path(model), method: :delete
